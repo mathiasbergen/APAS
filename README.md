@@ -1,7 +1,5 @@
 # APAS
 
-## Version v2.0.0
-
 ## Overview
 APAS is a MATLAB-based angular spectrum modeling program designed to calculate the pressure radiated by a baffled circular piston.
 
