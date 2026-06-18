@@ -7,7 +7,7 @@ Users are encouraged to report bugs and unexpected behavior by opening an issue 
 
 ### APAS-001: Infinite loop on distinct frequencies
 **Status:** Open  
-**Introduced:** 2.1  
+**Introduced:** v2.1  
 **Priority:** Medium
 
 **Description**
