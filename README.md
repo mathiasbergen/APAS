@@ -16,11 +16,11 @@ Read APAS_user_guide.docx in docs\ folder
 
 ## Citation: 
 - See CITATION.cff 
+- Cite the current APAS version from this repository
 - Detailed APAS theory description
 Sæther, M. M. (2024). Numerical Integration and Angular Spectrum Modeling of Resonant and Non-Resonant Wave Interaction with a Solid Plate.
 Journal of Theoretical and Computational Acoustics, 12(3), 123-145.
 https://doi.org/10.1142/S2591728524500063
-- Cite the current APAS version from this repository
 
 ## License
 MIT license. Include the license file in folder.
