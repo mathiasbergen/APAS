@@ -13,10 +13,10 @@ warning('') % Clear lastwarn. A MATLAB lastwarn warning on badly scaled polynomi
 warning('off','all')
 
 %% Input parameters
-f_vec  = 600e3;         % Frequency
+f_vec  = 663600;         % Frequency
 z_vec = 376.05e-3;           % Distance from receiver to source
 r_vec = 0;             % Lateral distance; or radius of receiver when receiverType = 'transducer'
-a_vec = 10.55e-3;         % Radius of source
+a_vec = 100/(2*pi*500e3/1485);         % Radius of source
 recAndModelType = 'hydrophone';          % Input argument: 'transducer'  or  'hydrophone' or 'diffCorrTransducer' , 'diffCorrHydrophone' , 'planeWave' , 'KinslerAndFrey'
 wavePropSetup = 'transm';   % Input argument: 'transm','transm1','transm2','echo','echo1','echo2','freefield',
 %% Input parameters numerical integration scheme
@@ -368,8 +368,8 @@ resultsFolder = fullfile(pwd, '..', 'results');
 if ~exist(resultsFolder, 'dir')
     mkdir(resultsFolder);
 end
-resultFilePath = fullfile(resultsFolder, 'APAS_result.mat');
-save(resultFilePath, 'a_vec', 'f_vec', 'z_vec', 'r_vec', 'errTresh', 'compute_time', 'recAndModelType', 'wavePropSetup', 'plateVarsSave');
+% resultFilePath = fullfile(resultsFolder, 'APAS_result.mat');
+% save(resultFilePath, 'a_vec', 'f_vec', 'z_vec', 'r_vec', 'errTresh', 'compute_time', 'recAndModelType', 'wavePropSetup', 'plateVarsSave');
 
 %% Quick access of first simulation (comment out)
 pressure = squeeze(cell2mat(freq_spectrum(1,1,1,1)));
